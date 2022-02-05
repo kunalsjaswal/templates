@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K S jaswal Templates</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        padding: 30px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        background-color: red;
+        font-size: 4vw;
+        animation-name: head;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      a {
+        font-size: 2vw;
+        position: absolute;
+        text-decoration: none;
+        left: 10%;
+        top: 7%;
+        padding: 10px;
+        color: white;
+        transition: 3s;
+      }
+      a:hover {
+        background-color: black;
+      }
+      @keyframes head {
+        0% {
+          text-shadow: 0px;
+        }
+        100% {
+          text-shadow: 10px 10px 15px black;
+        }
+      }
+      img {
+        width: 100%;
+      }
+      .s1 {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+      }
+      .d1 {
+        width: 40%;
+        position: relative;
+        float: left;
+        left: 4%;
+        transition: 3s;
+      }
+      .d2 {
+        position: absolute;
+        width: 40%;
+        float: left;
+        right: 4%;
+        transition: 3s;
+      }
+      .d3 {
+        width: 40%;
+        position: relative;
+        float: left;
+        transition: 3s;
+        margin-top: 30%;
+        transition: 3s;
+        left: 4%;
+      }
+      .d4 {
+        position: absolute;
+        margin-top: 30%;
+        width: 40%;
+        float: left;
+        right: 4%;
+        transition: 3s;
+      }
+      .d5 {
+        position: absolute;
+        width: 60%;
+        margin-top: 59%;
+        margin-left: 20%;
+        transition: 3s;
+      }
+
+      .d1:hover {
+        width: 45%;
+        left: 2%;
+      }
+      .d2:hover {
+        width: 45%;
+        right: 2%;
+      }
+      .d3:hover {
+        width: 45%;
+        left: 2%;
+      }
+      .d4:hover {
+        width: 45%;
+        right: 2%;
+      }
+      .d5:hover {
+        width: 65%;
+        margin-left: 15%;
+      }
+      @media (max-width: 520px) {
+        h1 > a {
+          top: 3%;
+        }
+        .s1 {
+          display: block;
+        }
+        .s1 div {
+          float: none;
+          position: absolute;
+        }
+        .d1 {
+          left: 18%;
+          width: 60%;
+        }
+        .d2 {
+          margin-top: 32%;
+          left: 18%;
+          width: 60%;
+        }
+        .d3 {
+          margin-top: 64%;
+          left: 18%;
+          width: 60%;
+        }
+        .d4 {
+          margin-top: 98%;
+
+          left: 18%;
+          width: 60%;
+        }
+        .d5 {
+          margin-top: 133%;
+          width: 60%;
+          left: -2%;
+        }
+
+        .d1:hover,
+        .d2:hover,
+        .d3:hover,
+        .d4:hover {
+          width: 65%;
+          left: 15%;
+        }
+        .d5:hover {
+          width: 65%;
+          left: -0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">HOME</a> Simple Templates</h1>
+
+    <section class="s1">
+      <div class="d1">
+        <a
+          href="https://kunalsjaswal.github.io/temps/temp1/temp1.html"
+          target="_blank"
+        >
+          <img src="img/s1.png" alt="" />
+        </a>
+      </div>
+      <div class="d2">
+        <a
+          href="https://kunalsjaswal.github.io/temps/temp4/index.html"
+          target="_blank"
+        >
+          <img src="img/s2.png" alt="" />
+        </a>
+      </div>
+
+      <div class="d3">
+        <a
+          href="https://kunalsjaswal.github.io/temps/temp3/index.html"
+          target="_blank"
+        >
+          <img src="img/s3.png" alt="" />
+        </a>
+      </div>
+      <div class="d4">
+        <a
+          href="https://kunalsjaswal.github.io/temps/temp5/index.html"
+          target="_blank"
+        >
+          <img src="img/s4.png" alt="" />
+        </a>
+      </div>
+      <div class="d5">
+        <a
+          href="https://kunalsjaswal.github.io/temps/temp6/index.html"
+          target="_blank"
+        >
+          <img src="img/s5.png" alt="" />
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

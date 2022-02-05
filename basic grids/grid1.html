@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Grid 1</title>
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <div onclick="showcustom()">custom color</div>
+    </div>
+    <div class="main1" id="main">
+      <div id="custom">
+        <h1>CHOOSE CUSTOM COLOR</h1>
+        <label for="">navbar</label>
+        <input type="color" name="" id="navbar" />
+        <button id="b1" onclick="navfnx1()">Change</button><br /><br />
+        <label for="">body</label>
+        <input type="color" name="" id="body" />
+        <button id="b1" onclick="navfnx2()">Change</button><br /><br />
+        <label for="">footer</label>
+        <input type="color" name="" id="foot" />
+        <button id="b1" onclick="navfnx3()">Change</button>
+        <button class="clo" id="clo" onclick="remove()">CLOSE</button>
+        <button class="clo2">
+          <a href="grid1.html">RESET</a>
+        </button>
+      </div>
+    </div>
+    <div class="footer" id="footer">Powered by Ks Jaswal</div>
+
+    <script>
+      // for navbar
+      var navbar = document.getElementById("navbar");
+      var navs = document.getElementById("nav");
+      function navfnx1() {
+        navs.style.backgroundColor = navbar.value;
+      }
+
+      //   for body
+      var body = document.getElementById("main");
+      var bodycolor = document.getElementById("body");
+      function navfnx2() {
+        body.style.backgroundColor = bodycolor.value;
+      }
+      // for footer
+      var foot = document.getElementById("footer");
+      var footcolor = document.getElementById("foot");
+      function navfnx3() {
+        foot.style.backgroundColor = footcolor.value;
+      }
+
+      //showcustom
+      var contents = document.getElementById("custom");
+
+      function showcustom() {
+        contents.style.display = "block";
+      }
+      function remove() {
+        contents.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

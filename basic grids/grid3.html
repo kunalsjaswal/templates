@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid3</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    .nav {
+      position: fixed;
+      width: 25%;
+      height: 100%;
+      background-color: #ff5600;
+    }
+    .main1 {
+      position: absolute;
+      width: 70%;
+      height: 180%;
+      right: 0;
+    }
+    .d1 {
+      margin-top: 02%;
+      width: 100%;
+      height: 40%;
+      background-color: #f8e0dc;
+    }
+    .d2,
+    .d3 {
+      width: 45%;
+      height: 20%;
+      background-color: #f8e0dc;
+      margin-top: 2%;
+      float: left;
+      margin-left: 0%;
+    }
+    .d3 {
+      margin-left: 10%;
+    }
+    .d4 {
+      width: 100%;
+      height: 25%;
+      background-color: #f8e0dc;
+      clear: left;
+      margin-top: 35%;
+    }
+    .footer {
+      background-color: #a8695f;
+      width: 75%;
+      height: 15%;
+      right: 0;
+      position: absolute;
+      top: 170%;
+      text-align: center;
+      font-size: 2em;
+      color: white;
+    }
+    .press {
+      width: 30%;
+      box-shadow: 2px 2px 10px black;
+      padding: 5px;
+      transition: 2s;
+      margin-top: 5%;
+      cursor: pointer;
+    }
+    .press:hover {
+      width: 35%;
+    }
+    .custom{
+        width: 90%;
+        text-align: center;
+        box-shadow: 2px 2px 10px black;
+        margin-top: 2%;
+        background-image: linear-gradient(to right top, #fb6d00, #ff7d6b, #ff9ead, #fbc3d8, #e9e5e8);
+        border-radius: 10px;
+        padding: 10px;
+        animation: 2s;
+        display: none;
+    }
+    .custom h1{
+        margin-bottom: 5%;
+        animation: 2s;
+
+    }
+    .b1{
+        background: black;
+        border: 0;
+        color: white;
+        padding: 5px;
+        animation: 2s;
+        cursor: pointer;
+        margin-left: 20%;
+    }
+    .b1:hover{
+        opacity: 0.7;
+    }
+    label{
+        margin-right: 5%;
+        font-size: 1.3em;
+    }
+    .close{
+        position: absolute;
+        top: 7%;
+        right: 8%;
+        width: 8%;
+        height: 3%;
+        border: 2px solid black;
+        background-image: url("https://t3.ftcdn.net/jpg/03/64/30/82/360_F_364308273_cV9OrZrqUpZ8En9rC8KxBqaxkVg95ZTY.jpg");
+        background-size: contain;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .close:hover{
+        width: 9%;
+        height: 3.5%;
+    }
+    .reset{
+        position: absolute;
+        margin-left: 5%;
+
+    }
+    .reset a{
+        text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="nav" id="nav">
+      
+        <div class="press" onclick="opens()">Custom Colors</div>
+        <div class="custom" id="custom">
+            <h1>Choose Custom Colors</h1>
+            <label for="">navbar</label>
+            <input type="color" name="" id="nav1">
+            <button class="b1" onclick="changenav()">change</button><br><br>
+            <label for=""> body </label>
+            <input type="color" name="" id="body1">
+            <button class="b1" onclick="changebody()">change</button><br><br>
+            <label for="">footer</label>
+            <input type="color" name="" id="foot1">
+            <button class="b1" onclick="changefoot()">change</button>
+            <div class="close" onclick="closes()"></div>
+            <button class="reset"><a href="grid3.html">RESET</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="main1" id="main1">
+      <div class="d1" id="dd1" ></div>
+      <div class="d2" id="dd2" ></div>
+      <div class="d3" id="dd3" ></div>
+      <div class="d4" id="dd4" ></div>
+    </div>
+    <div class="footer" id="foot">powered by Ks Jaswal</div>
+
+    <script>
+        // open 
+        var opn=document.getElementById("custom");
+        function opens(){
+            opn.style.display="block";
+            
+        }
+        //close
+        function closes(){
+            opn.style.display="none";
+        }
+
+        // navbar change
+        var navbar=document.getElementById("nav");
+        var navcolor=document.getElementById("nav1");
+        function changenav(){
+            navbar.style.backgroundColor=navcolor.value;
+        }
+
+        //change body
+        var body1=document.getElementById("dd1");
+        var body2=document.getElementById("dd2");
+        var body3=document.getElementById("dd3");
+        var body4=document.getElementById("dd4");
+
+        var bodycolor=document.getElementById("body1");
+        function changebody(){
+            body1.style.backgroundColor=bodycolor.value;
+            body2.style.backgroundColor=bodycolor.value;
+            body3.style.backgroundColor=bodycolor.value;
+            body4.style.backgroundColor=bodycolor.value;
+
+        }
+
+        //change footer
+        var footer=document.getElementById("foot");
+        var footcolor=document.getElementById("foot1");
+        function changefoot(){
+            footer.style.backgroundColor=footcolor.value;
+        }
+
+    </script>
+  </body>
+</html>
