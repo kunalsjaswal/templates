@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>shopping site</title>
+  </head>
+  <body>
+    <!-- header -->
+    <h1>MY SHOP POLIO SITE</h1>
+
+    <div class="nav">
+      <h2 data-aos="fade-down" data-aos-duration="2000">Welcome</h2>
+      <ul>
+        <li>HOME</li>
+        <li>YOUR ORDERS</li>
+        <li>CONTACT US</li>
+        <li></li>
+      </ul>
+    </div>
+
+    <section class="centre">
+      <!-- aside  -->
+
+      <aside>
+        <div class="list">
+          <h2>Shopping Type</h2>
+          <ul>
+            <li>Electronics</li>
+            <li>Clothes</li>
+            <li>Furniture</li>
+            <li>Grocery</li>
+            <li>Books</li>
+          </ul>
+        </div>
+
+        <div class="img">
+          <img src="img/model1.jpg" alt="" />
+        </div>
+      </aside>
+
+      <section class="main">
+        <!-- items  -->
+        <div class="grid">
+          <div class="g1"><img src="img/dress.jpg" alt="" /> DRESS</div>
+          <div class="g1"><img src="img/jeans.jpg" alt="" />JEANS</div>
+          <div class="g1"><img src="img/phone.jpeg" alt="" />MOBILES</div>
+          <div class="g1"><img src="img/shorts.jpg" alt="" />SHORTS</div>
+          <div class="g1"><img src="img/skirt.jpg" alt="" />SKIRTS</div>
+          <div class="g1"><img src="img/sunglass.jpg" alt="" />SUNGLASSES</div>
+          <div class="g1"><img src="img/tshirt.jpg" alt="" />T-SHIRTS</div>
+          <div class="g1"><img src="img/wallet.jpeg" alt="" />WALLETS</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- image slide  -->
+    <section class="image">
+      <img src="img/back.jpg" alt="" />
+      <button class="sh1">SHOP NOW</button>
+      <p name="sli" id="sli"></p>
+      <div class="off" data-aos="zoom-in" data-aos-duration="2000">
+        <p class="off1">25% off Accessories</p>
+        <p class="off2">Grab them before they're gone</p>
+        <p class="off3">Offer ends August 1</p>
+      </div>
+
+      <!-- girls section  -->
+      <section class="girls">
+        <h2 data-aos="slide-down" data-aos-duration="2000">
+          Popular Women's Categories
+        </h2>
+        <div class="gcat">
+          <div class="gg1"><img src="img/dress.jpg" alt="" />Dress</div>
+          <div class="g1"><img src="img/jeans.jpg" alt="" />Jeans</div>
+          <div class="g1"><img src="img/sunglass.jpg" alt="" />Sunglasses</div>
+          <div class="g1"><img src="img/purse.jpg" alt="" />Purse</div>
+          <div class="g1"><img src="img/makeup.jpg" alt="" />Makeup</div>
+        </div>
+        <div class="img2">
+          <img src="img/poster1.png" alt="" />
+        </div>
+
+        <div class="shopgirls">
+          <!-- option 1 -->
+          <div class="option1" id="opt1" onclick="showcontent1()">
+            <div id="chose1" >1</div>
+
+            <div class="cont1" id="cont1">
+              <h2>DRESSES</h2>
+              <div class="l1">
+                <img src="img/dress.jpg" alt="">
+                Green one piece <br>
+                <mark> only 20 stock left </mark><br>
+                <b> price : $28 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l2">
+                <img src="img/dress2.jpg" alt="">
+                Green one piece <br>
+                <mark> only 20 stock left </mark><br>
+                <b> price : $28 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l3">
+                <img src="img/dress3.jpg" alt="">
+                  blue skirt  <br>
+                <mark> only 10 stock left </mark><br>
+                <b> price : $60 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l4">
+                <img src="img/dress4.jpeg" alt="">
+                black mini skirt <br>
+                <mark> only 43 stock left </mark><br>
+                <b> price : $40 </b>
+                <button>buy now</button>
+              </div>
+            </div>
+
+          </div>
+          <!-- option 2 -->
+          <div class="option2" id="opt2" onclick="showcontent2()">
+            <div id="chose2">2</div>
+           <div class="cont2" id="cont2">
+              <h2>ACCESSORIES</h2>
+              <div class="l1">
+                <img src="img/acc1.jpeg" alt="">
+                Brouch <br>
+                <mark> 220 stock left </mark><br>
+                <b> price : $8 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l2">
+                <img src="img/acc2.jpg" alt="">
+                Golden Watch <br>
+                <mark> only 30 stock left </mark><br>
+                <b> price : $108 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l3">
+                <img src="img/acc4.jpg" alt="">
+                Makeup Kit  <br>
+                <mark>  400 stock left </mark><br>
+                <b> price : $150 </b>
+                <button>buy now</button>
+              </div>
+              <div class="l4">
+                <img src="img/acc3.png" alt="">
+                Carry Bag <br>
+                <mark> only 23 stock left </mark><br>
+                <b> price : $80 </b>
+                <button>buy now</button>
+              </div>
+            </div>
+          </div>
+        
+
+        <!-- option 3 -->
+        <div class="option3" id="opt3" onclick="showcontent3()">
+          <div id="chose3">3</div>
+          <div class="cont3" id="cont3">
+            <h2>JEANS</h2>
+            <div class="l1">
+              <img src="img/jeans.jpg" alt="">
+              blue shaded jeans <br>
+              <mark> only 30 stock left </mark><br>
+              <b> price : $48 </b>
+              <button>buy now</button>
+            </div>
+            <div class="l2">
+              <img src="img/jeans2.jpg" alt="">
+              light blue jeans <br>
+              <mark>  100 stock left </mark><br>
+              <b> price : $58 </b>
+              <button>buy now</button>
+            </div>
+            <div class="l3">
+              <img src="img/jeans3.jpeg" alt="">
+              wired jeans  <br>
+              <mark> only 10 stock left </mark><br>
+              <b> price : $80 </b>
+              <button>buy now</button>
+            </div>
+            <div class="l4">
+              <img src="img/jeans4.jpg" alt="">
+              black jeans <br>
+              <mark> only 33 stock left </mark><br>
+              <b> price : $50 </b>
+              <button>buy now</button>
+            </div>
+          </div>
+        </div>
+        <footer>
+          powered by ksjaswal
+        </footer>
+      </section>
+     
+    </section>
+
+    
+    <!-- scripts  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      function myfunction(x) {
+        x.classList.toggle("change");
+      }
+
+      // sliding script
+      let arr = [];
+      let time = 3000;
+      let i = 0;
+      arr[0] = "SHOP NOW";
+      arr[1] = "GRAB THE OPPURTUNITY";
+      arr[2] = "THE SHOPPING SEASON HAS COME";
+      function slides() {
+        let var1 = document.getElementById("sli");
+        var1.textContent = arr[i];
+        if (i < arr.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("slides()", time);
+      }
+      window.onload = slides;
+
+      //girls dress slidshow
+      var cont1=document.getElementById("cont1");
+      var cont2=document.getElementById("cont2");
+      var cont3=document.getElementById("cont3");
+     
+     
+
+      function showcontent1(){
+        cont1.style.display="block";
+        cont2.style.display="none";
+        cont3.style.display="none";
+
+      }
+      function showcontent2(){
+        cont1.style.display="none";
+        cont2.style.display="block";
+        cont3.style.display="none";
+
+      }
+      function showcontent3(){
+        cont3.style.display="block";
+        cont2.style.display="none";
+        cont1.style.display="none";
+
+      }
+    </script>
+  </body>
+</html>
